@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialPortToolBiliBili")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4636840854c491a5102ce203ecd0bba87c8e774")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialPortToolBiliBili")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialPortToolBiliBili")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
