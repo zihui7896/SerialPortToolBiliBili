@@ -1,0 +1,16 @@
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPortToolBiliBili.exe
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPortToolBiliBili.deps.json
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPortToolBiliBili.runtimeconfig.json
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPortToolBiliBili.dll
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPortToolBiliBili.pdb
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.Form1.resources
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.csproj.GenerateResource.cache
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.GeneratedMSBuildEditorConfig.editorconfig
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.AssemblyInfoInputs.cache
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.AssemblyInfo.cs
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.csproj.CoreCompileInputs.cache
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.dll
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\refint\SerialPortToolBiliBili.dll
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.pdb
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.genruntimeconfig.cache
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\ref\SerialPortToolBiliBili.dll
