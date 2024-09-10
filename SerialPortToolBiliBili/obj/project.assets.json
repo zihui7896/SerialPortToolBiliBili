@@ -1,11 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "SerialPort/1.0.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SerialPort.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SerialPort.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SerialPort/1.0.0.1": {
+      "sha512": "y7qFmbwSXUgrfSGaOIOJkiLrrITjmlmRAqIt+r5Zkaayr9USa4ePKmQztZRNFZWQ1dftdQdwefkP4BolP0yskg==",
+      "type": "package",
+      "path": "serialport/1.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SerialPort.dll",
+        "serialport.1.0.0.1.nupkg.sha512",
+        "serialport.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "SerialPort >= 1.0.0.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\zihui\\.nuget\\packages\\": {},
@@ -56,6 +81,12 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "SerialPort": {
+            "target": "Package",
+            "version": "[1.0.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

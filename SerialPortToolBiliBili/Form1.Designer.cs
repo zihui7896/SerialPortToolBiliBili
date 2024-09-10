@@ -30,43 +30,49 @@
         {
             richTextBox2 = new RichTextBox();
             groupBox1 = new GroupBox();
-            button1 = new Button();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
+            openPortButton = new Button();
+            DTRCheckBox = new CheckBox();
+            RTSCheckBox = new CheckBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
-            comboBox5 = new ComboBox();
-            comboBox4 = new ComboBox();
-            comboBox3 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            portLabel = new Label();
+            stopbitComboBox = new ComboBox();
+            datebitecomboBox = new ComboBox();
+            checkComboBox = new ComboBox();
+            baudComboBox = new ComboBox();
+            portComboBox = new ComboBox();
             groupBox2 = new GroupBox();
-            textBox1 = new TextBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
+            reciveFileTextBox = new TextBox();
+            selectionPathButton = new Button();
+            saveDataButton = new Button();
+            stopButton = new Button();
+            clearButton = new Button();
+            hexCheckBox = new CheckBox();
+            autoClearChekBox = new CheckBox();
             groupBox3 = new GroupBox();
+            autoTimeTextBox = new TextBox();
+            label6 = new Label();
+            sendFileTextBox = new TextBox();
+            openFileButton = new Button();
+            sendFileButton = new Button();
+            clearSendButton = new Button();
+            sendButton = new Button();
+            sendHexCheckBox = new CheckBox();
+            autoSendCheckBox = new CheckBox();
             groupBox4 = new GroupBox();
-            richTextBox1 = new RichTextBox();
+            receiveRichTextBox = new RichTextBox();
             groupBox5 = new GroupBox();
-            richTextBox3 = new RichTextBox();
+            sendRichTextBox = new RichTextBox();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
-            textBox2 = new TextBox();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            label6 = new Label();
-            textBox3 = new TextBox();
+            stateToolStripStatusLabel = new ToolStripStatusLabel();
+            toolStripStatusLabel3 = new ToolStripStatusLabel();
+            sendCountToolStripStatusLabel = new ToolStripStatusLabel();
+            toolStripStatusLabel5 = new ToolStripStatusLabel();
+            receiveCountToolStripStatusLabel = new ToolStripStatusLabel();
+            clearCountToolStripStatusLabel = new ToolStripStatusLabel();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -85,19 +91,19 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(checkBox2);
-            groupBox1.Controls.Add(checkBox1);
+            groupBox1.Controls.Add(openPortButton);
+            groupBox1.Controls.Add(DTRCheckBox);
+            groupBox1.Controls.Add(RTSCheckBox);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(comboBox5);
-            groupBox1.Controls.Add(comboBox4);
-            groupBox1.Controls.Add(comboBox3);
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(portLabel);
+            groupBox1.Controls.Add(stopbitComboBox);
+            groupBox1.Controls.Add(datebitecomboBox);
+            groupBox1.Controls.Add(checkComboBox);
+            groupBox1.Controls.Add(baudComboBox);
+            groupBox1.Controls.Add(portComboBox);
             groupBox1.Location = new Point(13, 25);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(389, 396);
@@ -105,36 +111,36 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "串口配置";
             // 
-            // button1
+            // openPortButton
             // 
-            button1.Location = new Point(168, 314);
-            button1.Name = "button1";
-            button1.Size = new Size(205, 76);
-            button1.TabIndex = 12;
-            button1.Text = "打开串口";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            openPortButton.Location = new Point(168, 314);
+            openPortButton.Name = "openPortButton";
+            openPortButton.Size = new Size(205, 76);
+            openPortButton.TabIndex = 12;
+            openPortButton.Text = "打开串口";
+            openPortButton.UseVisualStyleBackColor = true;
+            openPortButton.Click += button1_Click_1;
             // 
-            // checkBox2
+            // DTRCheckBox
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(21, 344);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(94, 35);
-            checkBox2.TabIndex = 11;
-            checkBox2.Text = "DTR";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            DTRCheckBox.AutoSize = true;
+            DTRCheckBox.Location = new Point(21, 344);
+            DTRCheckBox.Name = "DTRCheckBox";
+            DTRCheckBox.Size = new Size(94, 35);
+            DTRCheckBox.TabIndex = 11;
+            DTRCheckBox.Text = "DTR";
+            DTRCheckBox.UseVisualStyleBackColor = true;
+            DTRCheckBox.CheckedChanged += checkBox2_CheckedChanged;
             // 
-            // checkBox1
+            // RTSCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(21, 303);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(90, 35);
-            checkBox1.TabIndex = 10;
-            checkBox1.Text = "RTS";
-            checkBox1.UseVisualStyleBackColor = true;
+            RTSCheckBox.AutoSize = true;
+            RTSCheckBox.Location = new Point(21, 303);
+            RTSCheckBox.Name = "RTSCheckBox";
+            RTSCheckBox.Size = new Size(90, 35);
+            RTSCheckBox.TabIndex = 10;
+            RTSCheckBox.Text = "RTS";
+            RTSCheckBox.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -172,69 +178,69 @@
             label2.TabIndex = 6;
             label2.Text = "波特率";
             // 
-            // label1
+            // portLabel
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(21, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(86, 31);
-            label1.TabIndex = 5;
-            label1.Text = "端口号";
+            portLabel.AutoSize = true;
+            portLabel.Location = new Point(21, 42);
+            portLabel.Name = "portLabel";
+            portLabel.Size = new Size(86, 31);
+            portLabel.TabIndex = 5;
+            portLabel.Text = "端口号";
             // 
-            // comboBox5
+            // stopbitComboBox
             // 
-            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(168, 258);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(205, 39);
-            comboBox5.TabIndex = 4;
+            stopbitComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            stopbitComboBox.FormattingEnabled = true;
+            stopbitComboBox.Location = new Point(168, 258);
+            stopbitComboBox.Name = "stopbitComboBox";
+            stopbitComboBox.Size = new Size(205, 39);
+            stopbitComboBox.TabIndex = 4;
             // 
-            // comboBox4
+            // datebitecomboBox
             // 
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(168, 202);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(205, 39);
-            comboBox4.TabIndex = 3;
+            datebitecomboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            datebitecomboBox.FormattingEnabled = true;
+            datebitecomboBox.Location = new Point(168, 202);
+            datebitecomboBox.Name = "datebitecomboBox";
+            datebitecomboBox.Size = new Size(205, 39);
+            datebitecomboBox.TabIndex = 3;
             // 
-            // comboBox3
+            // checkComboBox
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(168, 146);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(205, 39);
-            comboBox3.TabIndex = 2;
+            checkComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            checkComboBox.FormattingEnabled = true;
+            checkComboBox.Location = new Point(168, 146);
+            checkComboBox.Name = "checkComboBox";
+            checkComboBox.Size = new Size(205, 39);
+            checkComboBox.TabIndex = 2;
             // 
-            // comboBox2
+            // baudComboBox
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(168, 90);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(205, 39);
-            comboBox2.TabIndex = 1;
+            baudComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            baudComboBox.FormattingEnabled = true;
+            baudComboBox.Location = new Point(168, 90);
+            baudComboBox.Name = "baudComboBox";
+            baudComboBox.Size = new Size(205, 39);
+            baudComboBox.TabIndex = 1;
             // 
-            // comboBox1
+            // portComboBox
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(168, 34);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(205, 39);
-            comboBox1.TabIndex = 0;
+            portComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            portComboBox.FormattingEnabled = true;
+            portComboBox.Location = new Point(168, 34);
+            portComboBox.Name = "portComboBox";
+            portComboBox.Size = new Size(205, 39);
+            portComboBox.TabIndex = 0;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(checkBox4);
-            groupBox2.Controls.Add(checkBox3);
+            groupBox2.Controls.Add(reciveFileTextBox);
+            groupBox2.Controls.Add(selectionPathButton);
+            groupBox2.Controls.Add(saveDataButton);
+            groupBox2.Controls.Add(stopButton);
+            groupBox2.Controls.Add(clearButton);
+            groupBox2.Controls.Add(hexCheckBox);
+            groupBox2.Controls.Add(autoClearChekBox);
             groupBox2.Location = new Point(12, 427);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(389, 281);
@@ -242,81 +248,81 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "接收配置";
             // 
-            // textBox1
+            // reciveFileTextBox
             // 
-            textBox1.Location = new Point(6, 232);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(363, 38);
-            textBox1.TabIndex = 19;
+            reciveFileTextBox.Location = new Point(6, 232);
+            reciveFileTextBox.Name = "reciveFileTextBox";
+            reciveFileTextBox.Size = new Size(363, 38);
+            reciveFileTextBox.TabIndex = 19;
             // 
-            // button5
+            // selectionPathButton
             // 
-            button5.Location = new Point(13, 179);
-            button5.Name = "button5";
-            button5.Size = new Size(161, 46);
-            button5.TabIndex = 18;
-            button5.Text = "选择路径";
-            button5.UseVisualStyleBackColor = true;
+            selectionPathButton.Location = new Point(13, 179);
+            selectionPathButton.Name = "selectionPathButton";
+            selectionPathButton.Size = new Size(161, 46);
+            selectionPathButton.TabIndex = 18;
+            selectionPathButton.Text = "选择路径";
+            selectionPathButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // saveDataButton
             // 
-            button4.Location = new Point(180, 179);
-            button4.Name = "button4";
-            button4.Size = new Size(189, 46);
-            button4.TabIndex = 17;
-            button4.Text = "保存数据";
-            button4.UseVisualStyleBackColor = true;
+            saveDataButton.Location = new Point(180, 179);
+            saveDataButton.Name = "saveDataButton";
+            saveDataButton.Size = new Size(189, 46);
+            saveDataButton.TabIndex = 17;
+            saveDataButton.Text = "保存数据";
+            saveDataButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // stopButton
             // 
-            button3.Location = new Point(180, 115);
-            button3.Name = "button3";
-            button3.Size = new Size(189, 46);
-            button3.TabIndex = 16;
-            button3.Text = "暂停";
-            button3.UseVisualStyleBackColor = true;
+            stopButton.Location = new Point(180, 115);
+            stopButton.Name = "stopButton";
+            stopButton.Size = new Size(189, 46);
+            stopButton.TabIndex = 16;
+            stopButton.Text = "暂停";
+            stopButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // clearButton
             // 
-            button2.Location = new Point(180, 53);
-            button2.Name = "button2";
-            button2.Size = new Size(189, 46);
-            button2.TabIndex = 15;
-            button2.Text = "手动清空";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            clearButton.Location = new Point(180, 53);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(189, 46);
+            clearButton.TabIndex = 15;
+            clearButton.Text = "手动清空";
+            clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += button2_Click;
             // 
-            // checkBox4
+            // hexCheckBox
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(22, 122);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(142, 35);
-            checkBox4.TabIndex = 14;
-            checkBox4.Text = "十六进制";
-            checkBox4.UseVisualStyleBackColor = true;
+            hexCheckBox.AutoSize = true;
+            hexCheckBox.Location = new Point(22, 122);
+            hexCheckBox.Name = "hexCheckBox";
+            hexCheckBox.Size = new Size(142, 35);
+            hexCheckBox.TabIndex = 14;
+            hexCheckBox.Text = "十六进制";
+            hexCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // autoClearChekBox
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(22, 60);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(142, 35);
-            checkBox3.TabIndex = 13;
-            checkBox3.Text = "自动清空";
-            checkBox3.UseVisualStyleBackColor = true;
+            autoClearChekBox.AutoSize = true;
+            autoClearChekBox.Location = new Point(22, 60);
+            autoClearChekBox.Name = "autoClearChekBox";
+            autoClearChekBox.Size = new Size(142, 35);
+            autoClearChekBox.TabIndex = 13;
+            autoClearChekBox.Text = "自动清空";
+            autoClearChekBox.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(textBox3);
+            groupBox3.Controls.Add(autoTimeTextBox);
             groupBox3.Controls.Add(label6);
-            groupBox3.Controls.Add(textBox2);
-            groupBox3.Controls.Add(button6);
-            groupBox3.Controls.Add(button7);
-            groupBox3.Controls.Add(button8);
-            groupBox3.Controls.Add(button9);
-            groupBox3.Controls.Add(checkBox5);
-            groupBox3.Controls.Add(checkBox6);
+            groupBox3.Controls.Add(sendFileTextBox);
+            groupBox3.Controls.Add(openFileButton);
+            groupBox3.Controls.Add(sendFileButton);
+            groupBox3.Controls.Add(clearSendButton);
+            groupBox3.Controls.Add(sendButton);
+            groupBox3.Controls.Add(sendHexCheckBox);
+            groupBox3.Controls.Add(autoSendCheckBox);
             groupBox3.Location = new Point(13, 714);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(389, 296);
@@ -324,124 +330,12 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "发送配置";
             // 
-            // groupBox4
+            // autoTimeTextBox
             // 
-            groupBox4.Controls.Add(richTextBox2);
-            groupBox4.Controls.Add(richTextBox1);
-            groupBox4.Location = new Point(436, 25);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(627, 470);
-            groupBox4.TabIndex = 9;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "接收区";
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Dock = DockStyle.Fill;
-            richTextBox1.Location = new Point(3, 34);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(621, 433);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(richTextBox3);
-            groupBox5.Location = new Point(437, 520);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(626, 493);
-            groupBox5.TabIndex = 10;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "发送区";
-            // 
-            // richTextBox3
-            // 
-            richTextBox3.Dock = DockStyle.Fill;
-            richTextBox3.Location = new Point(3, 34);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(620, 456);
-            richTextBox3.TabIndex = 0;
-            richTextBox3.Text = "";
-            // 
-            // statusStrip1
-            // 
-            statusStrip1.ImageScalingSize = new Size(32, 32);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 1023);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1086, 41);
-            statusStrip1.TabIndex = 11;
-            statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(257, 31);
-            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(13, 199);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(363, 38);
-            textBox2.TabIndex = 26;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(13, 146);
-            button6.Name = "button6";
-            button6.Size = new Size(161, 46);
-            button6.TabIndex = 25;
-            button6.Text = "打开文件";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(187, 146);
-            button7.Name = "button7";
-            button7.Size = new Size(189, 46);
-            button7.TabIndex = 24;
-            button7.Text = "发送文件";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(187, 82);
-            button8.Name = "button8";
-            button8.Size = new Size(189, 46);
-            button8.TabIndex = 23;
-            button8.Text = "清空发送";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(184, 24);
-            button9.Name = "button9";
-            button9.Size = new Size(189, 46);
-            button9.TabIndex = 22;
-            button9.Text = "手动发送";
-            button9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(21, 89);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(142, 35);
-            checkBox5.TabIndex = 21;
-            checkBox5.Text = "十六进制";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(20, 31);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(142, 35);
-            checkBox6.TabIndex = 20;
-            checkBox6.Text = "自动发送";
-            checkBox6.UseVisualStyleBackColor = true;
-            checkBox6.CheckedChanged += checkBox6_CheckedChanged;
+            autoTimeTextBox.Location = new Point(270, 253);
+            autoTimeTextBox.Name = "autoTimeTextBox";
+            autoTimeTextBox.Size = new Size(103, 38);
+            autoTimeTextBox.TabIndex = 28;
             // 
             // label6
             // 
@@ -452,12 +346,163 @@
             label6.TabIndex = 27;
             label6.Text = "自动发送周期(ms):";
             // 
-            // textBox3
+            // sendFileTextBox
             // 
-            textBox3.Location = new Point(270, 253);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(103, 38);
-            textBox3.TabIndex = 28;
+            sendFileTextBox.Location = new Point(13, 199);
+            sendFileTextBox.Name = "sendFileTextBox";
+            sendFileTextBox.Size = new Size(363, 38);
+            sendFileTextBox.TabIndex = 26;
+            // 
+            // openFileButton
+            // 
+            openFileButton.Location = new Point(13, 146);
+            openFileButton.Name = "openFileButton";
+            openFileButton.Size = new Size(161, 46);
+            openFileButton.TabIndex = 25;
+            openFileButton.Text = "打开文件";
+            openFileButton.UseVisualStyleBackColor = true;
+            // 
+            // sendFileButton
+            // 
+            sendFileButton.Location = new Point(187, 146);
+            sendFileButton.Name = "sendFileButton";
+            sendFileButton.Size = new Size(189, 46);
+            sendFileButton.TabIndex = 24;
+            sendFileButton.Text = "发送文件";
+            sendFileButton.UseVisualStyleBackColor = true;
+            // 
+            // clearSendButton
+            // 
+            clearSendButton.Location = new Point(187, 82);
+            clearSendButton.Name = "clearSendButton";
+            clearSendButton.Size = new Size(189, 46);
+            clearSendButton.TabIndex = 23;
+            clearSendButton.Text = "清空发送";
+            clearSendButton.UseVisualStyleBackColor = true;
+            // 
+            // sendButton
+            // 
+            sendButton.Location = new Point(184, 24);
+            sendButton.Name = "sendButton";
+            sendButton.Size = new Size(189, 46);
+            sendButton.TabIndex = 22;
+            sendButton.Text = "手动发送";
+            sendButton.UseVisualStyleBackColor = true;
+            // 
+            // sendHexCheckBox
+            // 
+            sendHexCheckBox.AutoSize = true;
+            sendHexCheckBox.Location = new Point(20, 89);
+            sendHexCheckBox.Name = "sendHexCheckBox";
+            sendHexCheckBox.Size = new Size(142, 35);
+            sendHexCheckBox.TabIndex = 21;
+            sendHexCheckBox.Text = "十六进制";
+            sendHexCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // autoSendCheckBox
+            // 
+            autoSendCheckBox.AutoSize = true;
+            autoSendCheckBox.Location = new Point(20, 31);
+            autoSendCheckBox.Name = "autoSendCheckBox";
+            autoSendCheckBox.Size = new Size(142, 35);
+            autoSendCheckBox.TabIndex = 20;
+            autoSendCheckBox.Text = "自动发送";
+            autoSendCheckBox.UseVisualStyleBackColor = true;
+            autoSendCheckBox.CheckedChanged += checkBox6_CheckedChanged;
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(richTextBox2);
+            groupBox4.Controls.Add(receiveRichTextBox);
+            groupBox4.Location = new Point(436, 25);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(627, 470);
+            groupBox4.TabIndex = 9;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "接收区";
+            // 
+            // receiveRichTextBox
+            // 
+            receiveRichTextBox.Dock = DockStyle.Fill;
+            receiveRichTextBox.Location = new Point(3, 34);
+            receiveRichTextBox.Name = "receiveRichTextBox";
+            receiveRichTextBox.Size = new Size(621, 433);
+            receiveRichTextBox.TabIndex = 0;
+            receiveRichTextBox.Text = "";
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(sendRichTextBox);
+            groupBox5.Location = new Point(437, 520);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(626, 493);
+            groupBox5.TabIndex = 10;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "发送区";
+            // 
+            // sendRichTextBox
+            // 
+            sendRichTextBox.Dock = DockStyle.Fill;
+            sendRichTextBox.Location = new Point(3, 34);
+            sendRichTextBox.Name = "sendRichTextBox";
+            sendRichTextBox.Size = new Size(620, 456);
+            sendRichTextBox.TabIndex = 0;
+            sendRichTextBox.Text = "";
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(32, 32);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, stateToolStripStatusLabel, toolStripStatusLabel3, sendCountToolStripStatusLabel, toolStripStatusLabel5, receiveCountToolStripStatusLabel, clearCountToolStripStatusLabel });
+            statusStrip1.Location = new Point(0, 1023);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1086, 41);
+            statusStrip1.TabIndex = 11;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(86, 31);
+            toolStripStatusLabel1.Text = "状态：";
+            // 
+            // stateToolStripStatusLabel
+            // 
+            stateToolStripStatusLabel.AutoSize = false;
+            stateToolStripStatusLabel.Name = "stateToolStripStatusLabel";
+            stateToolStripStatusLabel.Size = new Size(250, 31);
+            stateToolStripStatusLabel.Text = "初始化正常";
+            // 
+            // toolStripStatusLabel3
+            // 
+            toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            toolStripStatusLabel3.Size = new Size(134, 31);
+            toolStripStatusLabel3.Text = "发送计数：";
+            // 
+            // sendCountToolStripStatusLabel
+            // 
+            sendCountToolStripStatusLabel.AutoSize = false;
+            sendCountToolStripStatusLabel.Name = "sendCountToolStripStatusLabel";
+            sendCountToolStripStatusLabel.Size = new Size(70, 31);
+            sendCountToolStripStatusLabel.Text = "0";
+            // 
+            // toolStripStatusLabel5
+            // 
+            toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            toolStripStatusLabel5.Size = new Size(134, 31);
+            toolStripStatusLabel5.Text = "接收计数：";
+            // 
+            // receiveCountToolStripStatusLabel
+            // 
+            receiveCountToolStripStatusLabel.AutoSize = false;
+            receiveCountToolStripStatusLabel.Name = "receiveCountToolStripStatusLabel";
+            receiveCountToolStripStatusLabel.Size = new Size(70, 31);
+            receiveCountToolStripStatusLabel.Text = "0";
+            // 
+            // clearCountToolStripStatusLabel
+            // 
+            clearCountToolStripStatusLabel.Name = "clearCountToolStripStatusLabel";
+            clearCountToolStripStatusLabel.Size = new Size(110, 31);
+            clearCountToolStripStatusLabel.Text = "清空计数";
             // 
             // Form1
             // 
@@ -493,39 +538,45 @@
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
-        private RichTextBox richTextBox1;
+        private RichTextBox receiveRichTextBox;
         private GroupBox groupBox5;
-        private RichTextBox richTextBox3;
-        private ComboBox comboBox1;
+        private RichTextBox sendRichTextBox;
+        private ComboBox portComboBox;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox5;
+        private ComboBox datebitecomboBox;
+        private ComboBox checkComboBox;
+        private ComboBox baudComboBox;
+        private ComboBox stopbitComboBox;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label label1;
-        private Button button1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private Button button3;
-        private Button button2;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
-        private TextBox textBox1;
-        private Button button5;
-        private Button button4;
-        private TextBox textBox2;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private TextBox textBox3;
+        private Label portLabel;
+        private Button openPortButton;
+        private CheckBox DTRCheckBox;
+        private CheckBox RTSCheckBox;
+        private Button stopButton;
+        private Button clearButton;
+        private CheckBox hexCheckBox;
+        private CheckBox autoClearChekBox;
+        private TextBox reciveFileTextBox;
+        private Button selectionPathButton;
+        private Button saveDataButton;
+        private TextBox sendFileTextBox;
+        private Button openFileButton;
+        private Button sendFileButton;
+        private Button clearSendButton;
+        private Button sendButton;
+        private CheckBox sendHexCheckBox;
+        private CheckBox autoSendCheckBox;
+        private TextBox autoTimeTextBox;
         private Label label6;
+        private ToolStripStatusLabel stateToolStripStatusLabel;
+        private ToolStripStatusLabel toolStripStatusLabel3;
+        private ToolStripStatusLabel sendCountToolStripStatusLabel;
+        private ToolStripStatusLabel toolStripStatusLabel5;
+        private ToolStripStatusLabel receiveCountToolStripStatusLabel;
+        private ToolStripStatusLabel clearCountToolStripStatusLabel;
     }
 }

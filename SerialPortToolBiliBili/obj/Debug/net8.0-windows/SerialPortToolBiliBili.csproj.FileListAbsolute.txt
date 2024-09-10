@@ -14,3 +14,7 @@ D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\
 D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.pdb
 D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.genruntimeconfig.cache
 D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\ref\SerialPortToolBiliBili.dll
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.sourcelink.json
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\bin\Debug\net8.0-windows\SerialPort.dll
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPortToolBiliBili.csproj.AssemblyReference.cache
+D:\zihui\c#-code\mycode\SerialPortToolBiliBili\SerialPortToolBiliBili\obj\Debug\net8.0-windows\SerialPo.B63EA601.Up2Date

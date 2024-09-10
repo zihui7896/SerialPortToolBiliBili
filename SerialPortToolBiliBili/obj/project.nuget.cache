@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ReZQgKpS2wg=",
+  "dgSpecHash": "LBskaBhIQZg=",
   "success": true,
   "projectFilePath": "D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\SerialPortToolBiliBili\\SerialPortToolBiliBili.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zihui\\.nuget\\packages\\serialport\\1.0.0.1\\serialport.1.0.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
