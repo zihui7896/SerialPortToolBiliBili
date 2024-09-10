@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\WindowsFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\zihui\\c#-code\\mycode\\serialporttoolbilibili\\windowsformsapp1\\windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\WindowsFormsApp1\\windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\zihui\\c#-code\\mycode\\serialporttoolbilibili\\windowsformsapp1\\windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14C5BD59-4CBC-46BD-B956-CEC292CBCB0A}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\serialporttoolbilibiliform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SerialPortToolBiliBiliForm.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\WindowsFormsApp1\\WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
@@ -34,15 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SerialPortToolBiliBiliForm.cs",
               "DocumentMoniker": "D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\WindowsFormsApp1\\WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
               "ToolTip": "D:\\zihui\\c#-code\\mycode\\SerialPortToolBiliBili\\WindowsFormsApp1\\WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
               "RelativeToolTip": "WindowsFormsApp1\\SerialPortToolBiliBiliForm.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAjwFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAkwEwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T01:51:10.637Z"
+              "WhenOpened": "2024-09-10T01:51:10.637Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -42,10 +42,10 @@ namespace SerialPortToolBiliBili
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.portLabel = new System.Windows.Forms.Label();
-            this.stopbitComboBox = new System.Windows.Forms.ComboBox();
-            this.datebitecomboBox = new System.Windows.Forms.ComboBox();
+            this.stopBitsComboBox = new System.Windows.Forms.ComboBox();
+            this.dataBitsComboBox = new System.Windows.Forms.ComboBox();
             this.checkComboBox = new System.Windows.Forms.ComboBox();
-            this.baudComboBox = new System.Windows.Forms.ComboBox();
+            this.baudRateComboBox = new System.Windows.Forms.ComboBox();
             this.portComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.reciveFileTextBox = new System.Windows.Forms.TextBox();
@@ -105,10 +105,10 @@ namespace SerialPortToolBiliBili
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.portLabel);
-            this.groupBox1.Controls.Add(this.stopbitComboBox);
-            this.groupBox1.Controls.Add(this.datebitecomboBox);
+            this.groupBox1.Controls.Add(this.stopBitsComboBox);
+            this.groupBox1.Controls.Add(this.dataBitsComboBox);
             this.groupBox1.Controls.Add(this.checkComboBox);
-            this.groupBox1.Controls.Add(this.baudComboBox);
+            this.groupBox1.Controls.Add(this.baudRateComboBox);
             this.groupBox1.Controls.Add(this.portComboBox);
             this.groupBox1.Location = new System.Drawing.Point(11, 19);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -197,25 +197,25 @@ namespace SerialPortToolBiliBili
             this.portLabel.TabIndex = 5;
             this.portLabel.Text = "端口号";
             // 
-            // stopbitComboBox
+            // stopBitsComboBox
             // 
-            this.stopbitComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.stopbitComboBox.FormattingEnabled = true;
-            this.stopbitComboBox.Location = new System.Drawing.Point(144, 200);
-            this.stopbitComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.stopbitComboBox.Name = "stopbitComboBox";
-            this.stopbitComboBox.Size = new System.Drawing.Size(176, 32);
-            this.stopbitComboBox.TabIndex = 4;
+            this.stopBitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stopBitsComboBox.FormattingEnabled = true;
+            this.stopBitsComboBox.Location = new System.Drawing.Point(144, 200);
+            this.stopBitsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.stopBitsComboBox.Name = "stopBitsComboBox";
+            this.stopBitsComboBox.Size = new System.Drawing.Size(176, 32);
+            this.stopBitsComboBox.TabIndex = 4;
             // 
-            // datebitecomboBox
+            // dataBitsComboBox
             // 
-            this.datebitecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.datebitecomboBox.FormattingEnabled = true;
-            this.datebitecomboBox.Location = new System.Drawing.Point(144, 156);
-            this.datebitecomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.datebitecomboBox.Name = "datebitecomboBox";
-            this.datebitecomboBox.Size = new System.Drawing.Size(176, 32);
-            this.datebitecomboBox.TabIndex = 3;
+            this.dataBitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dataBitsComboBox.FormattingEnabled = true;
+            this.dataBitsComboBox.Location = new System.Drawing.Point(144, 156);
+            this.dataBitsComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataBitsComboBox.Name = "dataBitsComboBox";
+            this.dataBitsComboBox.Size = new System.Drawing.Size(176, 32);
+            this.dataBitsComboBox.TabIndex = 3;
             // 
             // checkComboBox
             // 
@@ -227,15 +227,15 @@ namespace SerialPortToolBiliBili
             this.checkComboBox.Size = new System.Drawing.Size(176, 32);
             this.checkComboBox.TabIndex = 2;
             // 
-            // baudComboBox
+            // baudRateComboBox
             // 
-            this.baudComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.baudComboBox.FormattingEnabled = true;
-            this.baudComboBox.Location = new System.Drawing.Point(144, 70);
-            this.baudComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.baudComboBox.Name = "baudComboBox";
-            this.baudComboBox.Size = new System.Drawing.Size(176, 32);
-            this.baudComboBox.TabIndex = 1;
+            this.baudRateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.baudRateComboBox.FormattingEnabled = true;
+            this.baudRateComboBox.Location = new System.Drawing.Point(144, 70);
+            this.baudRateComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.baudRateComboBox.Name = "baudRateComboBox";
+            this.baudRateComboBox.Size = new System.Drawing.Size(176, 32);
+            this.baudRateComboBox.TabIndex = 1;
             // 
             // portComboBox
             // 
@@ -555,6 +555,10 @@ namespace SerialPortToolBiliBili
             this.clearCountToolStripStatusLabel.Size = new System.Drawing.Size(110, 31);
             this.clearCountToolStripStatusLabel.Text = "清空计数";
             // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM3";
+            // 
             // SerialPortToolBiliBiliForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -597,10 +601,10 @@ namespace SerialPortToolBiliBili
         private ComboBox portComboBox;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
-        private ComboBox datebitecomboBox;
+        private ComboBox dataBitsComboBox;
         private ComboBox checkComboBox;
-        private ComboBox baudComboBox;
-        private ComboBox stopbitComboBox;
+        private ComboBox baudRateComboBox;
+        private ComboBox stopBitsComboBox;
         private Label label5;
         private Label label4;
         private Label label3;
