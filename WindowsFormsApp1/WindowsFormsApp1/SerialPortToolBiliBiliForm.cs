@@ -1,3 +1,4 @@
+using Microsoft.Win32;
 using System;
 using System.IO.Ports;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace SerialPortToolBiliBili
         public SerialPortToolBiliBiliForm()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -113,14 +115,31 @@ namespace SerialPortToolBiliBili
             }
         }
 
+        private void serialLoad()
+        {
+            RegistryKey keyCom = Registry.LocalMachine.OpenSubKey(@"HARDWARE\DEVICEMAP\SERIALCOMM");
+            //string[] sSubKeys = keyCom.GetSubKeyNames();
+            string[] sSubkeys = SerialPort.GetPortNames();
+            portComboBox.Items.AddRange(sSubkeys);
+            this.portComboBox.SelectedIndex = 0;
+            //portComboBox.Items.Clear();
+            //foreach (var sValue in sSubKeys)
+            //{
+            //    string portName = (string)keyCom.GetValue(sValue);
+            //    portComboBox.Items.Add(portName);
+            //}
+
+        }
+
         private void SerialPortToolBiliBiliForm_Load(object sender, EventArgs e)
         {
-            //串口初始化
-            for (int i = 1; i< 5; i ++)  
-            {
-                this.portComboBox.Items.Add("COM" + i.ToString());
-            }
-            this.portComboBox.Text = "COM1";
+            //串口初始化  从本地注册表中获取 
+            serialLoad();
+            //for (int i = 1; i< 5; i ++)  
+            //{
+            //    this.portComboBox.Items.Add("COM" + i.ToString());
+            //}
+            //this.portComboBox.Text = "COM1";
 
             // 波特率初始化
             for (int i = 1; i < 4; i ++)
@@ -144,8 +163,8 @@ namespace SerialPortToolBiliBili
                 this.dataBitsComboBox.Items.Add(i.ToString());
             }
             this.dataBitsComboBox.Text = "5";
-            this.receiveRichTextBox.Text = "接收框";
-            this.sendRichTextBox.Text = "发送框";
+            //this.receiveRichTextBox.Text = "接收框";
+            //this.sendRichTextBox.Text = "发送框";
 
             // 停止位初始化
             string[] arrstopComboBox =
@@ -154,7 +173,7 @@ namespace SerialPortToolBiliBili
             };
             this.stopBitsComboBox.Items.AddRange(arrstopComboBox);
             this.stopBitsComboBox.Text = "1";
-
+            
 
 
 
@@ -192,6 +211,26 @@ namespace SerialPortToolBiliBili
 
         private void autoSendCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+            // 如果发送数据不为空，且串口打开，则发送数据
+            if (this.sendRichTextBox.Text != "" && serialPort1.IsOpen)
+            {
+                serialPort1.Write(sendRichTextBox.Text);
+                MessageBox.Show("发送成功" + sendRichTextBox.Text);
+            } else
+            {
+                MessageBox.Show("请检查串口是否打开或发送框是否为空");
+            }
+        }
+
+        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            string dataReceive =  serialPort1.ReadExisting();
+            receiveRichTextBox.AppendText(dataReceive);
 
         }
     }

@@ -424,6 +424,7 @@ namespace SerialPortToolBiliBili
             this.sendButton.TabIndex = 22;
             this.sendButton.Text = "手动发送";
             this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
             // sendHexCheckBox
             // 
@@ -558,6 +559,7 @@ namespace SerialPortToolBiliBili
             // serialPort1
             // 
             this.serialPort1.PortName = "COM3";
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
             // SerialPortToolBiliBiliForm
             // 
